@@ -5,7 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chai aur code</title>
 </head>
-<body>
+<body style="background-color: #212121;">
     
 </body>
+
+<script>
+    const div = document.createElement('div')
+    console.log(div)
+    div.className = "main"
+    div.id = Math.round((Math.random() * 10) + 1)
+    div.setAttribute("title", "generated title")
+    div.style.backgroundColor = "green"
+    div.style.padding = "12px"
+    div.innerHTML = "Chai aur code"
+
+    document.body.appendChild(div)
+
+    const div2 = document.createElement('div')
+    console.log(div2)
+    div2.className = "main"
+    div2.id = Math.round((Math.random() * 10) + 1)
+    div2.setAttribute("hello", "Aman")
+    div2.innerHTML = "My name is Aman"
+    div2.style.padding = "12px"
+    div2.style.backgroundColor = "red"
+
+    document.body.appendChild(div2)
+</script>
 </html>
