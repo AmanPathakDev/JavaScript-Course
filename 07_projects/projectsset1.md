@@ -30,7 +30,7 @@ buttons.forEach((button) => {
 ```
 
 ## Project 2
-```
+```javascript
 const form = document.querySelector('form')
 
 form.addEventListener('submit', (e) => {
@@ -49,4 +49,15 @@ form.addEventListener('submit', (e) => {
     results.innerHTML = `<span>${bmi}</span>`
   }
 })
+```
+
+## Project 3
+```javascript
+const clock = document.getElementById("clock")
+
+setInterval(function() {
+  let date = new Date()
+  // console.log(date.toLocaleString())
+  clock.innerHTML = date.toLocaleTimeString()
+}, 1000)
 ```
